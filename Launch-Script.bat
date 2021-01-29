@@ -1,0 +1,2 @@
+start /wait %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe -NonInteractive -Command "&{Invoke-WebRequest https://raw.githubusercontent.com/scottmarino-io/BitLocker/main/Enable-BitLocker.ps1 -UseBasicParsing -OutFile C:\Windows\Temp\Enable-BitLocker.ps1}"
+start /wait %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe -NonInteractive -ExecutionPolicy Byass -File C:\Windows\Temp\Enable-BitLocker.ps1
